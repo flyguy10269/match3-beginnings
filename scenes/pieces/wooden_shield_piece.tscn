@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqxe6kukoue12"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_1mlt7"]
+[ext_resource type="Texture2D" uid="uid://do1eo6l2gxid3" path="res://assets/Weapon & Tool/Wooden Shield.png" id="2_l3nih"]
+
+[node name="wooden_shield_piece" instance=ExtResource("1_1mlt7")]
+type = "wooden_shield"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_l3nih")

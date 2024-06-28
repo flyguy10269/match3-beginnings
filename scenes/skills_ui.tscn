@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://kgaa1jkkof74"]
+
+[ext_resource type="Texture2D" uid="uid://lumc4lfi7wtb" path="res://assets/UI/UI books & more.png" id="1_rpsoc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3wn0"]
+texture = ExtResource("1_rpsoc")
+35:5/size_in_atlas = Vector2i(3, 4)
+35:5/0 = 0
+10:8/size_in_atlas = Vector2i(3, 3)
+10:8/0 = 0
+10:1/size_in_atlas = Vector2i(3, 3)
+10:1/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+5:16/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lag50"]
+sources/0 = SubResource("TileSetAtlasSource_a3wn0")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihxlb"]
+
+[node name="skills_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lag50")
+format = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="GridContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ihxlb")

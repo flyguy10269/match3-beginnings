@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bto8ouga051o5"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_alyt1"]
+[ext_resource type="Texture2D" uid="uid://ysth2u7hyvg2" path="res://assets/Ore & Gem/Copper Ingot.png" id="2_v4gjl"]
+
+[node name="copper_piece" instance=ExtResource("1_alyt1")]
+type = "copper"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_v4gjl")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwmp0b6bybp7u"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_t6eal"]
+[ext_resource type="Texture2D" uid="uid://bqjfpnk41ut5a" path="res://assets/Material/String.png" id="2_c64lw"]
+
+[node name="string_piece" instance=ExtResource("1_t6eal")]
+type = "string"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_c64lw")

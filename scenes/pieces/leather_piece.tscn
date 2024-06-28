@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://fm0pa745vs5w"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_l8aj5"]
+[ext_resource type="Texture2D" uid="uid://hxelnl2i0ll" path="res://assets/Material/Leather.png" id="2_spu2x"]
+
+[node name="leather_piece" instance=ExtResource("1_l8aj5")]
+type = "leather"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_spu2x")

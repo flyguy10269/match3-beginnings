@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://mq6vvobure6s"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_22fa0"]
+[ext_resource type="Texture2D" uid="uid://b7jgvurqsmeqh" path="res://assets/Food/Bread.png" id="2_fcrmh"]
+
+[node name="bread_piece" instance=ExtResource("1_22fa0")]
+type = "bread"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_fcrmh")

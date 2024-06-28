@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl5a83jvvp630"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_jgogu"]
+[ext_resource type="Texture2D" uid="uid://c1cj1awphtw55" path="res://assets/Material/Wood Log.png" id="2_a7nso"]
+
+[node name="log" instance=ExtResource("1_jgogu")]
+
+[node name="piece" parent="." index="0"]
+texture = ExtResource("2_a7nso")

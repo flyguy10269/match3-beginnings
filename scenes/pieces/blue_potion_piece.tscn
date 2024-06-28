@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://66n2dn0vi2ex"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_yxr15"]
+[ext_resource type="Texture2D" uid="uid://bfa4c0chvi3rv" path="res://assets/Potion/Blue Potion.png" id="2_377gj"]
+
+[node name="blue_potion_piece" instance=ExtResource("1_yxr15")]
+type = "blue_potion"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_377gj")

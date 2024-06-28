@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://2a5sufuxgxbb"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_1aqc3"]
+[ext_resource type="Texture2D" uid="uid://ds53ketxstr0h" path="res://assets/Potion/Red Potion.png" id="2_8fcep"]
+
+[node name="red_potion_piece" instance=ExtResource("1_1aqc3")]
+type = "red_potion"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_8fcep")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dolhf6f0v2qlv"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_5djin"]
+[ext_resource type="Texture2D" uid="uid://bdhsuti5dodla" path="res://assets/Material/Fabric.png" id="2_ms2ik"]
+
+[node name="fabric_piece" instance=ExtResource("1_5djin")]
+type = "fabric"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_ms2ik")

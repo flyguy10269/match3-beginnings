@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyfa5ymxya2cj"]
+
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_w7elh"]
+[ext_resource type="Texture2D" uid="uid://cxghowkoriyo0" path="res://assets/Potion/Empty Bottle.png" id="2_y0d7d"]
+
+[node name="empty_bottle_piece" instance=ExtResource("1_w7elh")]
+type = "empty_bottle"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_y0d7d")
