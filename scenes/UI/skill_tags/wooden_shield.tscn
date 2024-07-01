@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcyyl55uisjc8"]
+
+[ext_resource type="PackedScene" uid="uid://nnuaeeekhk06" path="res://scenes/UI/skill_tags/skill.tscn" id="1_gmg7l"]
+[ext_resource type="Texture2D" uid="uid://do1eo6l2gxid3" path="res://assets/Weapon & Tool/Wooden Shield.png" id="2_lnf42"]
+
+[node name="skill" instance=ExtResource("1_gmg7l")]
+button_icon = ExtResource("2_lnf42")
+details = "is a shield for blocky blocky"

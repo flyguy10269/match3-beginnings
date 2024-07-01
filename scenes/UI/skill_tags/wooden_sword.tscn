@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxmt32g1gq44i"]
+
+[ext_resource type="PackedScene" uid="uid://nnuaeeekhk06" path="res://scenes/UI/skill_tags/skill.tscn" id="1_7heeh"]
+[ext_resource type="Texture2D" uid="uid://dfyqno6ahwof1" path="res://assets/Weapon & Tool/Wooden Sword.png" id="2_gjcqw"]
+
+[node name="skill" instance=ExtResource("1_7heeh")]
+button_icon = ExtResource("2_gjcqw")
+details = "is a wooden sword maybe attack will happen"

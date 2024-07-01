@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=3 uid="uid://kgaa1jkkof74"]
+
+[ext_resource type="Texture2D" uid="uid://lumc4lfi7wtb" path="res://assets/UI/UI books & more.png" id="1_rpsoc"]
+[ext_resource type="PackedScene" uid="uid://cxmt32g1gq44i" path="res://scenes/UI/skill_tags/wooden_sword.tscn" id="2_lupwk"]
+[ext_resource type="PackedScene" uid="uid://dcyyl55uisjc8" path="res://scenes/UI/skill_tags/wooden_shield.tscn" id="3_t3upu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3wn0"]
+texture = ExtResource("1_rpsoc")
+35:5/size_in_atlas = Vector2i(3, 4)
+35:5/0 = 0
+10:8/size_in_atlas = Vector2i(3, 3)
+10:8/0 = 0
+10:1/size_in_atlas = Vector2i(3, 3)
+10:1/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+5:16/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lag50"]
+sources/0 = SubResource("TileSetAtlasSource_a3wn0")
+
+[sub_resource type="SystemFont" id="SystemFont_n7yhu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0rsog"]
+font = SubResource("SystemFont_n7yhu")
+font_size = 30
+font_color = Color(0.00820195, 0.00820206, 0.00820197, 1)
+
+[node name="skills_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lag50")
+format = 2
+
+[node name="skillsList" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 540.0
+offset_right = 670.0
+offset_bottom = 600.0
+
+[node name="leftLable" type="Sprite2D" parent="skillsList"]
+scale = Vector2(6, 4)
+texture = ExtResource("1_rpsoc")
+centered = false
+region_enabled = true
+region_rect = Rect2(352, 272, 17, 16)
+
+[node name="middleLable" type="Sprite2D" parent="skillsList"]
+position = Vector2(100, 0)
+scale = Vector2(30, 4)
+texture = ExtResource("1_rpsoc")
+centered = false
+region_enabled = true
+region_rect = Rect2(352, 256, 16, 16)
+
+[node name="rightLabel" type="Sprite2D" parent="skillsList"]
+position = Vector2(560, 0)
+scale = Vector2(6, 4)
+texture = ExtResource("1_rpsoc")
+centered = false
+region_enabled = true
+region_rect = Rect2(368, 272, 16, 16)
+
+[node name="Label" type="Label" parent="skillsList"]
+top_level = true
+layout_mode = 2
+offset_left = 10.0
+offset_top = 540.0
+offset_right = 670.0
+offset_bottom = 600.0
+text = "skills
+"
+label_settings = SubResource("LabelSettings_0rsog")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="skillBackground" type="Sprite2D" parent="skillsList"]
+position = Vector2(0, 60)
+scale = Vector2(14.4, 7.8)
+texture = ExtResource("1_rpsoc")
+centered = false
+region_enabled = true
+region_rect = Rect2(561, 81, 46, 62)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+offset_left = 60.0
+offset_top = 620.0
+offset_right = 600.0
+offset_bottom = 620.0
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(10, 500)
+layout_mode = 2
+
+[node name="skill" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_lupwk")]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="skill2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("3_t3upu")]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
