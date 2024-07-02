@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://kgaa1jkkof74"]
+[gd_scene load_steps=9 format=3 uid="uid://kgaa1jkkof74"]
 
 [ext_resource type="Texture2D" uid="uid://lumc4lfi7wtb" path="res://assets/UI/UI books & more.png" id="1_rpsoc"]
+[ext_resource type="PackedScene" uid="uid://ds6lt44ajp88w" path="res://scenes/UI/skill_tags/wooden_staff.tscn" id="2_0liao"]
 [ext_resource type="PackedScene" uid="uid://cxmt32g1gq44i" path="res://scenes/UI/skill_tags/wooden_sword.tscn" id="2_lupwk"]
 [ext_resource type="PackedScene" uid="uid://dcyyl55uisjc8" path="res://scenes/UI/skill_tags/wooden_shield.tscn" id="3_t3upu"]
 
@@ -22,6 +23,7 @@ texture = ExtResource("1_rpsoc")
 sources/0 = SubResource("TileSetAtlasSource_a3wn0")
 
 [sub_resource type="SystemFont" id="SystemFont_n7yhu"]
+subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_0rsog"]
 font = SubResource("SystemFont_n7yhu")
@@ -105,10 +107,11 @@ horizontal_scroll_mode = 0
 custom_minimum_size = Vector2(10, 500)
 layout_mode = 2
 
-[node name="skill" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_lupwk")]
-custom_minimum_size = Vector2(0, 100)
+[node name="wooden_shield" parent="ScrollContainer/VBoxContainer" instance=ExtResource("3_t3upu")]
 layout_mode = 2
 
-[node name="skill2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("3_t3upu")]
-custom_minimum_size = Vector2(0, 100)
+[node name="wooden_staff" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_0liao")]
+layout_mode = 2
+
+[node name="wooden_sword" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_lupwk")]
 layout_mode = 2

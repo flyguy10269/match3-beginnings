@@ -9,17 +9,17 @@
 [node name="main" type="Node2D"]
 
 [node name="boardBacground" type="TextureRect" parent="."]
-offset_left = 672.0
+offset_left = 865.0
 offset_top = 548.0
-offset_right = 1184.0
-offset_bottom = 1060.0
+offset_right = 1385.0
+offset_bottom = 1068.0
 texture = ExtResource("1_3ld28")
 
 [node name="grid" type="Node2D" parent="."]
 script = ExtResource("2_sj5kd")
 width = 8
 height = 8
-x_start = 704
+x_start = 900
 y_start = 1028
 offset = 64
 y_offset = 10
@@ -38,9 +38,8 @@ one_shot = true
 
 [node name="background" type="TextureRect" parent="."]
 z_index = -1
-offset_top = -500.0
-offset_right = 1920.0
-offset_bottom = 580.0
+offset_right = 2020.0
+offset_bottom = 1080.0
 texture = ExtResource("3_mi1uc")
 expand_mode = 3
 

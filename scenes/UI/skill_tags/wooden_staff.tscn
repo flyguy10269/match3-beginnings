@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds6lt44ajp88w"]
+
+[ext_resource type="PackedScene" uid="uid://nnuaeeekhk06" path="res://scenes/UI/skill_tags/skill.tscn" id="1_ewmmn"]
+[ext_resource type="Texture2D" uid="uid://p5nh6xqvgib1" path="res://assets/Weapon & Tool/Wooden Staff.png" id="2_58a8e"]
+
+[node name="wooden_staff" instance=ExtResource("1_ewmmn")]
+button_icon = ExtResource("2_58a8e")
+details = "magical bullshit or something like that."
