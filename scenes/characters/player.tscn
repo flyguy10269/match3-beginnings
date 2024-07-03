@@ -1,6 +1,7 @@
-[gd_scene load_steps=34 format=3 uid="uid://bpjt5o071warx"]
+[gd_scene load_steps=35 format=3 uid="uid://bpjt5o071warx"]
 
 [ext_resource type="Texture2D" uid="uid://cgkmgstohnms8" path="res://assets/characters/player/Attack-01-Sheet.png" id="1_hrdop"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_wcpfa"]
 [ext_resource type="Texture2D" uid="uid://dsylb0nilneom" path="res://assets/characters/player/Dead-Sheet.png" id="2_0tqee"]
 [ext_resource type="Texture2D" uid="uid://b842x663ymr2c" path="res://assets/characters/player/Idle-Sheet.png" id="3_kgjlp"]
 [ext_resource type="Texture2D" uid="uid://bud7wexjxempj" path="res://assets/characters/player/Run-Sheet.png" id="4_sehun"]
@@ -225,6 +226,10 @@ animations = [{
 }]
 
 [node name="player" type="Node2D"]
+script = ExtResource("1_wcpfa")
+gold = null
+starting_health = 100
+inventory = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pphjk")

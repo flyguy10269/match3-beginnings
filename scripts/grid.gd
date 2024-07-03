@@ -10,9 +10,6 @@ var state;
 @export var y_start : int;
 @export var offset : int;
 @export var y_offset : int;
-#future scaling
-#var x_start : DisplayServer.window_get_size().x;
-#var y_start : DisplayServer.window_get_size().y;
 
 #swap back 
 var tile_one = null;
@@ -25,18 +22,18 @@ var move_checked = false;
 var possible_tiles = [
 	
 	preload("res://scenes/pieces/blue_potion_piece.tscn"),
-	preload("res://scenes/pieces/bread_piece.tscn"),
+	#preload("res://scenes/pieces/bread_piece.tscn"),
 	#preload("res://scenes/pieces/coal_piece.tscn"),
 	#preload("res://scenes/pieces/copper_piece.tscn"),
-	preload("res://scenes/pieces/empty_bottle_piece.tscn"),
-	preload("res://scenes/pieces/fabric_piece.tscn"),
-	#preload("res://scenes/pieces/knife_piece.tscn"),
-	preload("res://scenes/pieces/leather_piece.tscn"),
-	preload("res://scenes/pieces/log_piece.tscn"),
+	#preload("res://scenes/pieces/empty_bottle_piece.tscn"),
+	#preload("res://scenes/pieces/fabric_piece.tscn"),
+	preload("res://scenes/pieces/knife_piece.tscn"),
+	#preload("res://scenes/pieces/leather_piece.tscn"),
+	#preload("res://scenes/pieces/log_piece.tscn"),
 	preload("res://scenes/pieces/red_potion_piece.tscn"),
-	preload("res://scenes/pieces/string_piece.tscn"),
-	#preload("res://scenes/pieces/wooden_shield_piece.tscn"),
-	#preload("res://scenes/pieces/wooden_staff_piece.tscn"),
+	#preload("res://scenes/pieces/string_piece.tscn"),
+	preload("res://scenes/pieces/wooden_shield_piece.tscn"),
+	preload("res://scenes/pieces/wooden_staff_piece.tscn"),
 	
 ];
 #array for grid

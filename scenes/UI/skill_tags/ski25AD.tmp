@@ -13,8 +13,6 @@ offset_bottom = -980.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wvw0j")
-min_button_size = Vector2(100, 100)
-details = "item information"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
