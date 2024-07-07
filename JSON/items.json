@@ -1,0 +1,24 @@
+{
+	"bread":{
+		"name": "bread",
+		"stackable": true,
+		"healthgain": 15,
+		"scene": "bread_tile.tscn",
+		
+	},
+	"bluepotion":{
+		"name": "blue_potion",
+		"stackable": true,
+		"healthgain": 0,
+		"managain": 15
+		"scene": "blue_potion_tile.tscn",
+		
+	},
+	"redpotion":{
+		"name": "red_potion",
+		"stackable": true,
+		"healthgain": 25,
+		"scene": "red_potion_tile.tscn",
+		
+	},
+}

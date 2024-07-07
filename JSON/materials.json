@@ -1,0 +1,44 @@
+{
+	"coal":{
+		"name": "coal",
+		"stackable": true,
+		"scene": "coal_tile.tscn",
+		
+	},
+	"copper":{
+		"name": "copper",
+		"stackable": true,
+		"scene": "copper_tile.tscn",
+		
+	},
+	"emptybottle":{
+		"name": "empty_bottle",
+		"stackable": true,
+		"scene": "empty_bottle_tile.tscn",
+		
+	},
+	"fabric":{
+		"name": "fabric",
+		"stackable": true,
+		"scene": "fabric_tile.tscn",
+		
+	},
+	"leather":{
+		"name": "leather",
+		"stackable": true,
+		"scene": "leather_tile.tscn",
+		
+	},
+	"log":{
+		"name": "log",
+		"stackable": true,
+		"scene": "log_tile.tscn",
+		
+	},
+	"string":{
+		"name": "string",
+		"stackable": true,
+		"scene": "string_tile.tscn",
+		
+	},
+}

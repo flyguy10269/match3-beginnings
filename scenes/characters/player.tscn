@@ -227,9 +227,7 @@ animations = [{
 
 [node name="player" type="Node2D"]
 script = ExtResource("1_wcpfa")
-gold = null
 starting_health = 100
-inventory = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pphjk")

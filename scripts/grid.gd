@@ -20,20 +20,13 @@ var move_checked = false;
 
 #array of tiles
 var possible_tiles = [
-	
-	preload("res://scenes/pieces/blue_potion_piece.tscn"),
-	#preload("res://scenes/pieces/bread_piece.tscn"),
-	#preload("res://scenes/pieces/coal_piece.tscn"),
-	#preload("res://scenes/pieces/copper_piece.tscn"),
-	#preload("res://scenes/pieces/empty_bottle_piece.tscn"),
-	#preload("res://scenes/pieces/fabric_piece.tscn"),
-	preload("res://scenes/pieces/knife_piece.tscn"),
-	#preload("res://scenes/pieces/leather_piece.tscn"),
-	#preload("res://scenes/pieces/log_piece.tscn"),
-	preload("res://scenes/pieces/red_potion_piece.tscn"),
-	#preload("res://scenes/pieces/string_piece.tscn"),
-	preload("res://scenes/pieces/wooden_shield_piece.tscn"),
-	preload("res://scenes/pieces/wooden_staff_piece.tscn"),
+	preload("res://scenes/tiles/wooden_staff_tile.tscn"),
+	preload("res://scenes/tiles/wooden_shield_tile.tscn"),
+	preload("res://scenes/tiles/string_tile.tscn"),
+	preload("res://scenes/tiles/red_potion_tile.tscn"),
+	preload("res://scenes/tiles/knife_tile.tscn"),
+	preload("res://scenes/tiles/empty_bottle_tile.tscn"),
+	preload("res://scenes/tiles/blue_potion_tile.tscn"),
 	
 ];
 #array for grid

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cft7bkjnhe1ve"]
 
-[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_5btr7"]
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/tiles/tile.tscn" id="1_5btr7"]
 [ext_resource type="Texture2D" uid="uid://d0y60rvy8drl2" path="res://assets/Ore & Gem/Coal.png" id="2_d2e03"]
 
 [node name="coal_piece" instance=ExtResource("1_5btr7")]

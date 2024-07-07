@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bkf3gp0r2xjhn"]
 
-[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_714ks"]
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/tiles/tile.tscn" id="1_714ks"]
 [ext_resource type="Texture2D" uid="uid://c1cj1awphtw55" path="res://assets/Material/Wood Log.png" id="2_pf8u5"]
 
 [node name="log_piece" instance=ExtResource("1_714ks")]

@@ -9,17 +9,12 @@ var mana_points = 0;
 
 @export var inventory = [];
 
-enum equipped  {
-	weapon,
-	offhand,
-	helmet,
-	gloves,
-	chest,
-	legs,
-	feet,
-	};
-func set_equipment():
-	
+var equipped
+#set item to equipment slot
+func set_equipment(item_type, item):
+	if item_type == "weapon":
+		equipped.weapon = item;
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

@@ -1,0 +1,22 @@
+{
+	"woodensword":{
+		"name": "wooden_sword",
+		"stackable": false,
+		"ATCK": 10,
+		"scene": "wooden_sword_tile.tscn",
+		
+	},
+	"woodenstaff":{
+		"name": "wooden_staff",
+		"stackable": false,
+		"MGATCK": 10,
+		"scene": "wooden_staff_tile.tscn",
+		
+	},
+	"knife":{
+		"name": "knife",
+		"stackable": false,
+		"ATCK": 5
+		"scene": "knife_tile.tscn",
+	},
+}

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddcm1kqlrb5hd"]
 
-[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/pieces/piece.tscn" id="1_c6jyh"]
+[ext_resource type="PackedScene" uid="uid://bevt54w7jl7fn" path="res://scenes/tiles/tile.tscn" id="1_c6jyh"]
 [ext_resource type="Texture2D" uid="uid://bbwy63d34pwxd" path="res://assets/Weapon & Tool/Knife.png" id="2_5jjma"]
 
 [node name="knife_piece" instance=ExtResource("1_c6jyh")]
