@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://2ee5sf6rips2"]
+[gd_scene load_steps=7 format=3 uid="uid://2ee5sf6rips2"]
 
 [ext_resource type="Texture2D" uid="uid://fbbq0tpupe30" path="res://assets/basicboard.png" id="1_i0qhx"]
 [ext_resource type="Script" path="res://scripts/grid.gd" id="2_5iwjn"]
 [ext_resource type="Texture2D" uid="uid://ccc45cuwgsvc2" path="res://assets/background/Summer7.png" id="3_ry2bt"]
 [ext_resource type="PackedScene" uid="uid://kgaa1jkkof74" path="res://scenes/UI/skills_ui.tscn" id="4_8pyex"]
 [ext_resource type="PackedScene" uid="uid://bpjt5o071warx" path="res://scenes/characters/player.tscn" id="5_06ygx"]
+[ext_resource type="PackedScene" uid="uid://bnrpmvgr5bw2p" path="res://scenes/UI/game_ui.tscn" id="6_tsulb"]
 
 [node name="main" type="Node2D"]
 
@@ -48,6 +49,8 @@ expand_mode = 3
 [node name="player" parent="." instance=ExtResource("5_06ygx")]
 position = Vector2(100, 100)
 scale = Vector2(5, 5)
+
+[node name="game_ui" parent="." instance=ExtResource("6_tsulb")]
 
 [connection signal="timeout" from="destroy_timer" to="grid" method="_on_destroy_timer_timeout"]
 [connection signal="timeout" from="collapse_timer" to="grid" method="_on_collapse_timer_timeout"]
