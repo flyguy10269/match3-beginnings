@@ -39,7 +39,7 @@ one_shot = true
 
 [node name="background" type="TextureRect" parent="."]
 z_index = -1
-offset_right = 2020.0
+offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("3_ry2bt")
 expand_mode = 3
