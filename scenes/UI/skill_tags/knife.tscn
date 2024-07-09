@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bws28x0lecell"]
+
+[ext_resource type="PackedScene" uid="uid://nnuaeeekhk06" path="res://scenes/UI/skill_tags/skill.tscn" id="1_xlb4s"]
+[ext_resource type="Texture2D" uid="uid://bbwy63d34pwxd" path="res://assets/Weapon & Tool/Knife.png" id="2_1chu6"]
+
+[node name="knife" instance=ExtResource("1_xlb4s")]
+button_icon = ExtResource("2_1chu6")
+details = "stabby stabby"
+
+[node name="equip_values" parent="." index="1"]
+item_type = 1
+is_stackable = false
+attack = 10

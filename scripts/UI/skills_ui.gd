@@ -1,9 +1,11 @@
 extends Control
 
 var equipment = [
-	preload("res://scenes/UI/skill_tags/wooden_shield.tscn"),
-	preload("res://scenes/UI/skill_tags/wooden_staff.tscn"),
-	preload("res://scenes/UI/skill_tags/wooden_sword.tscn"),
+#	load("res://scenes/UI/skill_tags/wooden_shield.tscn"),
+#	load("res://scenes/UI/skill_tags/wooden_staff.tscn"),
+#	load("res://scenes/UI/skill_tags/wooden_sword.tscn"),
+#	load("res://scenes/UI/skill_tags/knife.tscn"),
+#	load("res://scenes/UI/skill_tags/red_potion.tscn"),
 ];
 
 

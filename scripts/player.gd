@@ -1,4 +1,5 @@
 extends Node2D
+class_name player;
 
 #starting values remove gold export later
 @export var gold: int;

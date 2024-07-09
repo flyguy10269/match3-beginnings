@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://nnuaeeekhk06"]
+[gd_scene load_steps=3 format=3 uid="uid://nnuaeeekhk06"]
 
 [ext_resource type="Script" path="res://scripts/skill.gd" id="1_wvw0j"]
+[ext_resource type="PackedScene" uid="uid://ck1cffw0jf5m6" path="res://scripts/equipment/base_equipment.tscn" id="2_kc5gm"]
 
 [node name="skill" type="Control"]
 custom_minimum_size = Vector2(600, 100)
@@ -20,3 +21,5 @@ details = "item information"
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+
+[node name="equip_values" parent="." instance=ExtResource("2_kc5gm")]

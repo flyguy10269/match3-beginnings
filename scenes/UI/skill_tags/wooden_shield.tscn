@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcyyl55uisjc8"]
+[gd_scene load_steps=3 format=3 uid="uid://dcyyl55uisjc8"]
 
 [ext_resource type="PackedScene" uid="uid://nnuaeeekhk06" path="res://scenes/UI/skill_tags/skill.tscn" id="1_gmg7l"]
 [ext_resource type="Texture2D" uid="uid://do1eo6l2gxid3" path="res://assets/Weapon & Tool/Wooden Shield.png" id="2_lnf42"]
-[ext_resource type="PackedScene" uid="uid://cnvail8vj64w1" path="res://scripts/equipment/wooden_shield_val.tscn" id="3_l5xsw"]
 
 [node name="wooden_shield" instance=ExtResource("1_gmg7l")]
 button_icon = ExtResource("2_lnf42")
 details = "is a shield for blocky blocky"
 
-[node name="wooden_shield_val" parent="." index="1" instance=ExtResource("3_l5xsw")]
+[node name="equip_values" parent="." index="1"]
+item_type = 2
+is_stackable = false
+defense = 5

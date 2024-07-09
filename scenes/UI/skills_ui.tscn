@@ -94,7 +94,7 @@ region_enabled = true
 region_rect = Rect2(561, 81, 46, 62)
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-custom_minimum_size = Vector2(0, 500)
+custom_minimum_size = Vector2(500, 400)
 layout_mode = 2
 offset_left = 60.0
 offset_top = 620.0
@@ -103,5 +103,5 @@ offset_bottom = 620.0
 horizontal_scroll_mode = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-custom_minimum_size = Vector2(10, 500)
+custom_minimum_size = Vector2(500, 400)
 layout_mode = 2

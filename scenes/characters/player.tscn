@@ -1,10 +1,12 @@
-[gd_scene load_steps=35 format=3 uid="uid://bpjt5o071warx"]
+[gd_scene load_steps=37 format=3 uid="uid://bpjt5o071warx"]
 
 [ext_resource type="Texture2D" uid="uid://cgkmgstohnms8" path="res://assets/characters/player/Attack-01-Sheet.png" id="1_hrdop"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_wcpfa"]
 [ext_resource type="Texture2D" uid="uid://dsylb0nilneom" path="res://assets/characters/player/Dead-Sheet.png" id="2_0tqee"]
 [ext_resource type="Texture2D" uid="uid://b842x663ymr2c" path="res://assets/characters/player/Idle-Sheet.png" id="3_kgjlp"]
 [ext_resource type="Texture2D" uid="uid://bud7wexjxempj" path="res://assets/characters/player/Run-Sheet.png" id="4_sehun"]
+[ext_resource type="PackedScene" uid="uid://cj7v73qaotkpc" path="res://scenes/UI/inventory/inventory.tscn" id="6_kvxw4"]
+[ext_resource type="PackedScene" uid="uid://bfp17u5x711iq" path="res://scenes/characters/equipment.tscn" id="7_d0h3k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b8mx6"]
 atlas = ExtResource("1_hrdop")
@@ -234,3 +236,7 @@ sprite_frames = SubResource("SpriteFrames_pphjk")
 animation = &"idle"
 autoplay = "idle"
 centered = false
+
+[node name="inventory" parent="." instance=ExtResource("6_kvxw4")]
+
+[node name="equipment" parent="inventory" instance=ExtResource("7_d0h3k")]
